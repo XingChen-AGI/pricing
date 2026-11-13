@@ -1,6 +1,6 @@
 # XingChen-AGI Pricing
 
-Public model pricing for XingChen-AGI.
+Public-site for XingChen-AGI model pricing.
 
-- Prices are listed per 1M tokens.
-- This repository stays private until the public release date (2026-11-18). On that date it is made public and GitHub Pages is enabled at `https://XingChen-AGI.github.io/pricing/`.
+- Served via GitHub Pages: https://XingChen-AGI.github.io/pricing/
+- Currently a placeholder; pricing details will be published at the public release date.
