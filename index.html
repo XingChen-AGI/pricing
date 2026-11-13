@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Models &amp; Pricing · XingChen-AGI</title>
+<style>
+  :root{--bg:#0f1117;--fg:#e6e9ef;--mut:#9aa3b2;--bd:#2a2f3a;--acc:#4f8cff;--card:#161a22}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.6 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+  header{display:flex;align-items:baseline;gap:10px;padding:18px 28px;border-bottom:1px solid var(--bd)}
+  .brand{font-weight:700;font-size:17px}
+  .brand span{color:var(--mut);font-weight:400;font-size:13px}
+  main{max-width:920px;margin:0 auto;padding:40px 24px 56px}
+  h1{font-size:27px;margin:0 0 6px}
+  .lede{color:var(--mut);margin:0 0 28px}
+  h2{font-size:17px;margin:34px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--bd)}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--bd)}
+  th{color:var(--mut);font-weight:600}
+  tbody tr:hover td{background:var(--card)}
+  .model{font-weight:600;color:#fff}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.9em;color:#a5b4fc;word-break:break-all}
+  .note{color:var(--mut);font-size:.85em;margin-top:8px}
+  .billing{font-size:15px;color:var(--fg)}
+  footer{max-width:920px;margin:0 auto;padding:14px 24px 40px;border-top:1px solid var(--bd);color:var(--mut);font-size:.82em}
+  @media (prefers-color-scheme: light){
+    :root{--bg:#ffffff;--card:#f6f8fa;--fg:#1f2328;--mut:#656d76;--bd:#d0d7de}
+    code{color:#0969da}.model{color:#1f2328}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">XingChen-AGI <span>· China Telecom AI Technology Co., Ltd.</span></div>
+</header>
+<main>
+  <h1>Models &amp; Pricing</h1>
+  <p class="lede">Prices are listed in units of per 1M tokens. We bill based on the total number of input and output tokens processed by the model.</p>
+
+  <h2>Models</h2>
+  <table>
+    <thead>
+      <tr><th>Model</th><th>Base URL (OpenAI format)</th><th>Context length</th><th>Max output</th><th>Features</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="model">Xing4.1-Preview</td>
+        <td><code>https://api-maas.teleai.com.cn/v1</code></td>
+        <td>192K</td>
+        <td>192K</td>
+        <td>Structured output · Tool calls · Function calling</td>
+      </tr>
+      <!-- Add future models as additional rows. -->
+    </tbody>
+  </table>
+
+  <h2>Pricing — USD per 1M tokens</h2>
+  <table>
+    <thead>
+      <tr><th>Xing4.1-Preview</th><th>Off-peak</th><th>Peak (×2)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Input (cache miss)</td><td>$0.11</td><td>$0.22</td></tr>
+      <tr><td>Input (cache hit)</td><td>$0.0022</td><td>$0.0044</td></tr>
+      <tr><td>Output</td><td>$0.45</td><td>$0.90</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Peak hours are Monday – Friday, 00:00–11:00 New York time; all other hours (including weekends) are off-peak. Peak prices are 2× off-peak.</p>
+
+  <h2>Billing &amp; Notes</h2>
+  <p class="billing">Usage is charged as tokens used × price. Prices are in US dollars, are subject to change, and we reserve the right to update them. Please refer to this page for the most current pricing.</p>
+
+  <h2>Compliance</h2>
+  <p class="billing">Service terms and data policies apply to all usage. See the applicable terms for details.</p>
+</main>
+<footer>
+  © 2026 China Telecom AI Technology Co., Ltd. · All prices are per 1M tokens unless stated otherwise.
+</footer>
+</body>
+</html>
