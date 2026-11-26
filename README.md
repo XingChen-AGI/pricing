@@ -4,7 +4,7 @@ Public price card for XingChen-AGI models.
 
 - Served via GitHub Pages: https://xingchen-agi.github.io/pricing/
 - Covers Xing4.1-Preview: USD list prices plus the limited-time offer through 2026-12-20 (20% of list).
-- `index.html` is the live page; `index.full.html` is kept as an identical copy for editing/rollback.
+- `index.html` is the live page; keep a local identical copy for rollback before editing.
 - Source of truth for the figures used in upstream catalog PRs (models.dev, OpenClaw, Kilo) and in the pricing fields of provider plugins.
 
 ## Current prices (USD per 1M tokens)
@@ -16,3 +16,4 @@ Public price card for XingChen-AGI models.
 | Output | 0.90 | 0.18 |
 
 Cache-hit price is 5% of the corresponding input price. No peak/off-peak tiers apply.
+
